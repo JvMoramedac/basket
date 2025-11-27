@@ -1,6 +1,6 @@
 # 🏀 Basket App  
 Aplicación Android – Proyecto Profesional  
-*(Espacio para logo o imagen principal)*  
+
 ![Imagen Principal](logo.png)
 
 ---
@@ -18,7 +18,7 @@ Incluye:
 ---
 
 ## 📸 Galería  
-*(Agrega aquí capturas de pantalla de tu app)*  
+
 ![Screenshot 1]({BD9BD21A-98C5-4180-AEC2-92E9CF0B68FE}.png)  
 ![Screenshot 2]({6A6AEDD5-AEEC-44E2-859A-FF82E2B719FE}.png)
 
@@ -63,7 +63,7 @@ cd basket
 - 🧩 Dependencias modernas  
 - 🔧 Código adaptable a entornos de pruebas  
 
-*(Puedes ampliar esta sección con más detalles técnicos o funcionales)*
+
 
 ---
 
@@ -71,14 +71,14 @@ cd basket
 - **Kotlin / Java**  
 - **Android Studio**  
 - **Gradle**  
-- (Agrega más si lo deseas: Retrofit, Room, Firebase…)
+
 
 ---
 
 ## 🧩 Arquitectura  
-*(Describe aquí la arquitectura utilizada: MVVM, MVP, Clean Architecture...)*  
+ 
 
-Ejemplo:  
+
 - 🧱 **MVVM** para separar lógica y vistas  
 - 🎯 **ViewModel** para manejar estados  
 - 🔌 **Repository Pattern** para fuentes de datos  
@@ -94,5 +94,5 @@ Ejemplo:
 ---
 
 ## 👤 Autor  
-- **Nombre:** *(Javier Moro)*  
+- **Nombre:** *(Javier Mora)*  
 - **GitHub:** [@JvMoramedac](https://github.com/JvMoramedac)
