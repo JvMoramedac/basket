@@ -1,7 +1,7 @@
 # 🏀 Basket App  
 Aplicación Android – Proyecto Profesional  
 *(Espacio para logo o imagen principal)*  
-![Imagen Principal](imagen.png)
+![Imagen Principal](logo.png)
 
 ---
 
@@ -20,7 +20,7 @@ Incluye:
 ## 📸 Galería  
 *(Agrega aquí capturas de pantalla de tu app)*  
 ![Screenshot 1](imagen1.png)  
-![Screenshot 2](imagen2.png)
+![Screenshot 2]({6A6AEDD5-AEEC-44E2-859A-FF82E2B719FE}.png)
 
 ---
 
