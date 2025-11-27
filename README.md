@@ -19,7 +19,7 @@ Incluye:
 
 ## 📸 Galería  
 *(Agrega aquí capturas de pantalla de tu app)*  
-![Screenshot 1](imagen1.png)  
+![Screenshot 1]({BD9BD21A-98C5-4180-AEC2-92E9CF0B68FE}.png)  
 ![Screenshot 2]({6A6AEDD5-AEEC-44E2-859A-FF82E2B719FE}.png)
 
 ---
