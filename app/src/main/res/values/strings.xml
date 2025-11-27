@@ -1,0 +1,21 @@
+<resources>
+    <!-- Nombre de la aplicación -->
+    <string name="app_name">Basketball Score</string>
+
+    <!-- MainActivity -->
+    <string name="app_title">Basketball Score</string>
+    <string name="local_team">LOCAL</string>
+    <string name="visitor_team">VISITANTE</string>
+    <string name="plus_one">+1</string>
+    <string name="plus_two">+2</string>
+    <string name="minus_one">-1</string>
+    <string name="reset">Reset</string>
+    <string name="view_results">Ver Resultados</string>
+
+    <!-- ScoreActivity -->
+    <string name="final_results">Resultado Final</string>
+    <string name="result_local_wins">¡Ganó el equipo LOCAL!</string>
+    <string name="result_visitor_wins">¡Ganó el equipo VISITANTE!</string>
+    <string name="result_tie">¡Es un EMPATE!</string>
+    <string name="back_to_game">Volver al Partido</string>
+</resources>

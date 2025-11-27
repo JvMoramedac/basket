@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores principales -->
+    <color name="primary">#FF6B35</color>
+    <color name="primary_dark">#E85A2A</color>
+    <color name="accent">#4ECDC4</color>
+
+    <!-- Colores de equipos -->
+    <color name="local_color">#2E7D32</color>
+    <color name="visitor_color">#C62828</color>
+
+    <!-- Colores de interfaz -->
+    <color name="background">#F5F5F5</color>
+    <color name="score_color">#212121</color>
+    <color name="result_color">#FF6B35</color>
+
+    <!-- Colores estándar -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

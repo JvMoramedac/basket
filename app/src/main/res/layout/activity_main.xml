@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="@color/background"
+        tools:context=".MainActivity">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_title"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Equipo Local -->
+        <TextView
+            android:id="@+id/tvLocalTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/local_team"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/local_color"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvVisitorTeam"
+            android:layout_marginTop="40dp"/>
+
+        <!-- Equipo Visitante -->
+        <TextView
+            android:id="@+id/tvVisitorTeam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/visitor_team"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/visitor_color"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintStart_toEndOf="@id/tvLocalTeam"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"/>
+
+        <!-- Marcador Local -->
+        <TextView
+            android:id="@+id/tvLocalScore"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="0"
+            android:textSize="64sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/score"
+            android:textColor="@color/local_color"
+            app:layout_constraintTop_toBottomOf="@id/tvLocalTeam"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvVisitorScore"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Marcador Visitante -->
+        <TextView
+            android:id="@+id/tvVisitorScore"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="0"
+            android:textSize="64sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/score"
+            android:textColor="@color/visitor_color"
+            app:layout_constraintTop_toBottomOf="@id/tvVisitorTeam"
+            app:layout_constraintStart_toEndOf="@id/tvLocalScore"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Botones Equipo Local -->
+        <Button
+            android:id="@+id/btnLocalPlus1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_one"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/tvLocalScore"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnLocalPlus2"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnLocalPlus2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/plus_two"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@id/tvVisitorScore"
+            app:layout_constraintStart_toEndOf="@id/btnLocalPlus1"
+            app:layout_constraintTop_toBottomOf="@id/tvLocalScore" />
+
+        <Button
+            android:id="@+id/btnLocalMinus1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/minus_one"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/btnLocalPlus1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvVisitorScore"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Botones Equipo Visitante -->
+        <Button
+            android:id="@+id/btnVisitorPlus1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_one"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/tvVisitorScore"
+            app:layout_constraintStart_toEndOf="@id/tvLocalScore"
+            app:layout_constraintEnd_toStartOf="@id/btnVisitorPlus2"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnVisitorPlus2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/plus_two"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/tvVisitorScore"
+            app:layout_constraintStart_toEndOf="@id/btnVisitorPlus1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="8dp"/>
+
+        <Button
+            android:id="@+id/btnVisitorMinus1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/minus_one"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/btnVisitorPlus1"
+            app:layout_constraintStart_toEndOf="@id/tvLocalScore"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="8dp"/>
+
+        <!-- Botón Reset -->
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:textSize="16sp"
+            android:drawableLeft="@android:drawable/ic_menu_rotate"
+            app:layout_constraintTop_toBottomOf="@id/btnLocalMinus1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnViewResults"
+            android:layout_marginTop="32dp"/>
+
+        <!-- Botón Ver Resultados -->
+        <Button
+            android:id="@+id/btnViewResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_results"
+            android:textSize="16sp"
+            android:drawableRight="@android:drawable/ic_menu_send"
+            app:layout_constraintTop_toBottomOf="@id/btnVisitorMinus1"
+            app:layout_constraintStart_toEndOf="@id/btnReset"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="146dp"
+            android:layout_height="145dp"
+            app:srcCompat="@drawable/logo"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="518dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
